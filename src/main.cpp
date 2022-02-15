@@ -55,10 +55,10 @@ void right()
 void left()
 {
   Serial.println("right");
+  digitalWrite(HBridge2_pos, HIGH);
+  digitalWrite(HBridge2_neg, LOW);
   digitalWrite(HBridge1_pos, LOW);
   digitalWrite(HBridge1_neg, HIGH);
-  digitalWrite(HBridge2_pos, LOW);
-  digitalWrite(HBridge2_neg, HIGH);
   delay(100);
 }
 
